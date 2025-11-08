@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    macros {
+  /*  macros {
         finder_home: finder_home {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -41,15 +41,15 @@
                 <&macro_release &kp LEFT_COMMAND>,
                 <&macro_release &kp LEFT_ALT>;
         };
-    };
+    };  */
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp C_MUTE  &finder_downloads  &finder_desktop  &finder_home
+                &kp C_MUTE  //&finder_downloads  &finder_desktop  &finder_home
             >;
-            sensor-bindings = <&inc_dec_kp UP DOWN>;
+            &inc_dec_kp C_VOL_UP C_VOL_DN   //sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
     };
 };
