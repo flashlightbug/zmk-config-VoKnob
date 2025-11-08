@@ -9,15 +9,22 @@
 
         default_layer {
             bindings = <
-                &kp C_MUTE
+                // ... other key bindings ...
+                &kp C_MUTE  // Assign the mute keycode to the encoder's push button position
+                // ... other key bindings ...
             >;
         };
+
+        // ... other layers if needed ...
     };
 
+    // This section is for the encoder rotation configuration
     sensors {
-          compatable = "zmk,keymap-sensors";
-          sensor-bindings = <
-              &inc_dec_kp C_VOL_UP C_VOL_DN
-              >;
+        compatible = "zmk,keymap-sensors";
+        sensor-bindings = <
+            // Binds the first encoder to Volume Up (clockwise) and Volume Down (counter-clockwise)
+            &inc_dec_kp C_VOL_UP C_VOL_DN
+            // Add more bindings here for additional encoders if necessary
+        >;
     };
 };
