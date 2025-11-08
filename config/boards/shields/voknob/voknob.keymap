@@ -47,7 +47,7 @@
 
         default_layer {
             bindings = <
-                &bt BT_CLR  &finder_downloads  &finder_desktop  &finder_home
+                &kp C_MUTE  &finder_downloads  &finder_desktop  &finder_home
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
