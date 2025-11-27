@@ -9,7 +9,7 @@
 
         default_layer {
             bindings = <
-                &kp SPACE  //&kp M is not working either  //&kp C_MUTE is not working. It overrides the twist
+                &kp C_PP  //&kp M is not working either  //&kp C_MUTE is not working. It overrides the twist
                 &kp C_MUTE
             >;
             sensor-bindings = <
